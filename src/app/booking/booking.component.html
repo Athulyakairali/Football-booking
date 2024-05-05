@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Form</title>
+  <link rel="stylesheet" href="booking.component.css">
+</head>
+<body>
+  <div class="wrapper">
+    <h2>Book Your Tickets</h2>
+    <form action="#">
+      <div class="input-box">
+        <input type="text" placeholder="Enter your name" required>
+      </div>
+      <div class="input-box">
+        <input type="email" placeholder="Enter your email" required>
+      </div>
+      <div class="input-box">
+        <label for="checkin"> </label>
+        <input type="date" id="checkin" required>
+      </div>
+      
+      <div class="input-box">
+        <input type="number" placeholder="Number of seats" required>
+      </div>
+      <div class="input-box">
+        <select required>
+          <option value="" disabled selected>Select venue</option>
+          <option value="venue1">Venue 1</option>
+          <option value="venue2">Venue 2</option>
+          <option value="venue3">Venue 3</option>
+        </select>
+      </div>
+      <div class="input-box button">
+        <input type="submit" value="Book Now">
+      </div>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Match UI</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Global styles */
+    @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+   
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f8f9fa;
+      background-image: url('https://img.freepik.com/free-photo/soccer-ball-foreground-with-blurred-field_91128-4659.jpg?size=626&ext=jpg&ga=GA1.1.1127022326.1704703753&semt=sph');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      min-height: 100vh;
+    }
+
+    .team-card {
+      margin-top: 40px;
+    }
+
+    .team-card img {
+      max-width: 100%;
+      height: auto;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    .team-card .card-body {
+      text-align: center;
+    }
+
+    .team-card .btn-primary {
+      width: 100%;
+      border-radius: 0;
+      background-color: black; /* Change button color to black */
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="team-card">
+          <img src="https://img.freepik.com/free-vector/illustration-thailand-flag_53876-27145.jpg?t=st=1708574556~exp=1708578156~hmac=6a36a87d446f661b29eba3528f91ba1d13e0d0501c9eb312ca72aa2cfcdf04ee&w=1380" class="card-img-top" alt="Team 1 Image">
+          <div class="card-body">
+            <button type="button" class="btn btn-primary btn-lg" (click)="showTeam('team1')">Thailand</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="team-card">
+          <img src="https://img.freepik.com/free-vector/illustration-uk-flag_53876-18166.jpg?t=st=1708574677~exp=1708578277~hmac=06d5f5de845b2509f7fb5f343be8500460d09c918c54725795b675f17c27b929&w=1380" class="card-img-top" alt="Team 3 Image">
+          <div class="card-body">
+            <button type="button" class="btn btn-primary btn-lg" (click)="showTeam('team2')">England</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="team-card">
+          <img src="https://img.freepik.com/free-vector/illustration-brazil-flag_53876-27017.jpg?t=st=1708574601~exp=1708578201~hmac=bfaaa3a895d0439e73149284fc56dd511e9289df4c43393a920ea329a5f3f0f4&w=1380" class="card-img-top" alt="Team 3 Image">
+          <div class="card-body">
+            <button type="button" class="btn btn-primary btn-lg" (click)="showTeam('team3')">Brasil</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="team-card">
+          <img src="https://img.freepik.com/free-photo/closeup-shot-waving-flag-argentina-with-interesting-textures_181624-12640.jpg?t=st=1708574469~exp=1708578069~hmac=6de759970a88ab113a93cff982578db769a52f0c0acfe9a53dfd5401a2e15466&w=1060" class="card-img-to" class="card-img-top" alt="Team 4 Image">
+          <div class="card-body">
+            <button type="button" class="btn btn-primary btn-lg" (click)="showTeam('team4')">Argentina</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="team-card">
+          <img src="https://img.freepik.com/free-photo/small-flag-germany-blurred-city_485709-15.jpg?t=st=1708574396~exp=1708577996~hmac=1be8ef718625454cd652746482ba184182830c4f33d68e0821cb08fcac2395f5&w=996" class="card-img-top" alt="Team 5 Image">
+          <div class="card-body">
+            <button type="button" class="btn btn-primary btn-lg" (click)="showTeam('team5')">Germany</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="team-card">
+          <img src="https://img.freepik.com/free-vector/illustration-france-flag_53876-27099.jpg?t=st=1708574763~exp=1708578363~hmac=784198a8ac228bd8c8eec1759ed6742a75a891e36c43c27d0f52c409dd0ff622&w=1380" class="card-img-top" alt="Team 6 Image">
+          <div class="card-body">
+            <button type="button" class="btn btn-primary btn-lg" (click)="showTeam('team6')">France</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

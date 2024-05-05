@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('https://img.freepik.com/free-photo/soccer-ball-foreground-with-blurred-field_91128-4659.jpg?size=626&ext=jpg&ga=GA1.1.1127022326.1704703753&semt=sph');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-color: #f8f9fa; /* Changed fallback background color to a light shade */
+}
+
+.wrapper {
+  position: relative;
+  max-width: 500px; /* Adjusted max-width for better content alignment */
+  width: 100%;
+  background: #fff;
+  padding: 40px; /* Increased padding for better spacing */
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Adjusted box shadow for a lighter effect */
+}
+
+.wrapper h2 {
+  font-size: 26px; /* Increased font size for better emphasis */
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 30px; /* Increased margin bottom for better spacing */
+  text-align: center; /* Centered heading text */
+}
+
+.wrapper h2::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%); /* Centered the underline */
+  height: 3px;
+  width: 50px; /* Increased width for a wider underline */
+  border-radius: 12px;
+  background: #007bff; /* Changed underline color to a primary blue */
+}
+
+.wrapper form {
+  margin-top: 30px;
+}
+
+.wrapper form .input-box {
+  height: 60px;
+  margin: 20px 0;
+}
+
+.wrapper form .input-box input,
+.wrapper form .input-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding: 0 20px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  border: 2px solid #ced4da; /* Changed border color to a lighter shade */
+  border-bottom-width: 3px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  background-image: none; /* Removed background image */
+}
+
+.wrapper form .input-box input:focus,
+.wrapper form .input-box input:valid,
+.wrapper form .input-box select:focus,
+.wrapper form .input-box select:valid {
+  border-color: #007bff;
+}
+
+.wrapper form .input-box.button input {
+  color: #fff;
+  letter-spacing: 1px;
+  border: none;
+  background: #007bff;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.wrapper form .input-box.button input:hover {
+  background: #0056b3; /* Darkened button color on hover for better feedback */
+}
+
+.wrapper .form .text h3 {
+  color: #333;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.wrapper .form .text h3 a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.wrapper .form .text h3 a:hover {
+  text-decoration: underline;
+}
